@@ -10,7 +10,7 @@
 ## Keywords that matter here
 - month-end close, reconciliation, GL, reporting, process improvement, ERP administration
 
-## Bullets to favor / downplay
+## Emphasis for this job type
 - Favor: tags `accounting`
 - Downplay: consulting/billable framing — emphasize ownership instead
 

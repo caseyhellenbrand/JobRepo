@@ -1,6 +1,7 @@
 # Cover Letter: Business Transformation Senior, WAM — EY (as sent, 2026-09-28)
 
 > **Job posting:** [EY — Business Transformation Senior, WAM Wealth Management](https://careers.ey.com/job-invite/1721086/) · [Saved copy](posting.md) · [Analysis & decision log](analysis.md) · [Resume](resume.md)
+> **Google Doc:** [Casey Hellenbrand - Cover Letter - Senior Wealth Asset Management](https://docs.google.com/document/d/1uC4RoDjYqWHPFatZBcbekACoW9Sn1pY4cLBP3Ya4W6s/edit) (Drive → Cover Letters)
 > **File sent:** [originals/Casey_Hellenbrand_Cover_Letter_EY_WAM.pdf](originals/Casey_Hellenbrand_Cover_Letter_EY_WAM.pdf)
 
 Addressed to: EY Wealth & Asset Management, Financial Services Organization. Re: Business Transformation Senior – WAM, Wealth Management (Requisition ID 1726266)

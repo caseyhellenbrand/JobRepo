@@ -1,11 +1,12 @@
 ---
-description: Run the job-search workflow on a job posting (paste the posting or a URL after /apply)
+description: Run the job-application process on a posting (paste the posting URL or text after /apply)
 ---
 
-Follow the workflow in `CLAUDE.md` for this job posting:
+Run the `/apply` workflow in `CLAUDE.md` for this posting:
 
 $ARGUMENTS
 
-If only a URL was given, fetch the posting text first. If the master resume in
-`profile/master-resume.md` is still the placeholder, stop and ask
-Casey for his resume before tailoring anything.
+Start by reading the source-of-truth docs from Google Drive (Project Instructions, Bullet Bank,
+Cover Letter Playbook). If the Google Drive or Google Docs connector isn't available, say so and
+stop; don't fall back to copies in the repo. Stop at step 6 for Casey's sign-off before building
+any document.

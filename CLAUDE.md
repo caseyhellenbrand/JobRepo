@@ -1,45 +1,88 @@
 # Job Search Workflow — instructions for Claude
 
-This repo is Casey's job-search system. Every application is a folder with a
-record of **what** was sent and **why** it came out that way.
+This repo is Casey's job-search **record**: one folder per application holding the
+posting, the analysis, the decision log, and links to the Google Docs that were sent.
 
-## Layout
-- `profile/master-resume.md` — the full, untailored resume. Source of truth.
-- `profile/experience-bank.md` — every bullet Casey could use, tagged by skill/track. Tailored resumes pull from here; never invent experience that isn't in the bank or master resume.
-- `profile/preferences.md` — tone, formatting, things to always/never do.
-- `tracks/<track>.md` — one file per job type (e.g. ERP consulting, accounting, asset management). Each says which titles it targets, what to lead with, keywords, and which bullets to favor.
-- `applications/<YYYY-MM-DD>_<company>_<role>/` — one folder per application:
-  - `posting.md` — the job posting (full text) plus the live URL, and links to the materials sent
-  - `analysis.md` — fit score, keyword match, gaps, and the **decision log**
-  - `resume.md` — the tailored resume (header links back to the posting)
-  - `cover-letter.md` — the tailored cover letter (header links back to the posting)
-  - `originals/` — the exact files submitted (PDF/DOCX), named `Casey_Hellenbrand_<Resume|Cover_Letter>_<Company>.<ext>`
-- `tracker.csv` — one row per application (the index of everything).
-- `templates/` — starting points for analysis, resume, and cover letter.
-- `scripts/new_application.py` — creates the folder + tracker row.
-- `scripts/update_status.py` — changes an application's status in the tracker.
-- `scripts/build_index.py` — rebuilds the Applications table in `README.md` (runs automatically from the two scripts above).
+**Casey's Google Drive is the source of truth for content and process.** Read these
+at the start of every `/apply` run. Never work from chat memory or from copies in this
+repo; the Drive versions may have changed.
 
-## The workflow (run when Casey gives a posting)
-1. **Classify** the posting into an existing track in `tracks/`. If none fits, propose a new track (copy `tracks/_template.md`) and ask Casey before creating it.
-2. **Scaffold**: `python3 scripts/new_application.py --company "X" --role "Y" --track <track> --url "..."`. Save the posting text into `posting.md`.
-3. **Analyze** (`analysis.md`, from `templates/analysis.md`):
-   - Fit score 1–10 with a one-line justification
-   - Must-have requirements → matched / partial / missing, citing the bullet that matches
-   - Keywords from the posting to mirror, and gaps to address honestly (or leave out)
-4. **Tailor the resume** (`resume.md`): start from the master resume, apply the track's emphasis, reorder and reword bullets from the experience bank. Mirror the posting's language only where it's true.
-5. **Write the cover letter** (`cover-letter.md`): 3–4 short paragraphs, specific to the company and role, using the 2–3 strongest matches.
-6. **Fill in the decision log** in `analysis.md` — the core of this system. Record:
-   - which track was used and why
-   - what was moved up, cut, or reworded, and the reason for each
-   - which gaps were left unaddressed and why
-7. **Save the sendable files**: export the final resume and cover letter to PDF (and DOCX if Casey wants) into `originals/`, and fill in the "File sent" links in both headers. If Casey sends back an edited final version, save that one instead; `originals/` must always match what was actually submitted.
-8. Update `fit_score` in `tracker.csv`, run `python3 scripts/build_index.py`, commit and push, then give Casey a short summary: fit score, the top 3 changes, and any open questions.
+## Source-of-truth docs (Google Drive)
+| What | File | ID |
+|---|---|---|
+| Process (9 steps) | Project Instructions — Job and Resume Search | `1BhYRO5zRn5LlrhA77Ds-o1w3K-82IkdwtA7-1y2HSxg` |
+| Bullets, tags, lessons, shipped log | Baker Tilly Resume Bullet Bank — Master Reference | `1GjSLQmAVfv8uzOobVBdQVlEV6TKCfcbIWWxr2DmaM_0` |
+| Cover letter structure and rules | Cover Letter Playbook: Base Template and Process | `1Oj-tHmUJt0rvvy941r9UZY9MYEoxFgSoGcmlKLKOUDY` |
+| Resume template (.docx) | Template - Casey Hellenbrand - Resume - 2026.docx | `19YerE0difcOGITi-THIMy9OHQsx_L4pm` |
+
+Read the three Google Docs with Drive `read_file_content` (`includeComments: true`).
+If a file has moved or been renamed, search the Knowledge Base folder by title.
+
+## Drive folders
+| Folder | ID | Used for |
+|---|---|---|
+| Claude - Job and Resume 2026 | `1T87LI-jUTz7B1E12KdLLOGjMjqvH-8ES` | parent |
+| Knowledge Base | `18G5CLJnnU6BsPUvCVVRyu--gccfpHJLI` | the source docs above |
+| Position Resumes | `1dHldth7olwMZotzF_Ra4whF-yDPdxm6Z` | finished tailored resumes |
+| Cover Letters | `1-EoIQmWWyyp-Mkuvi6N6oK4esRC-niLr` | finished cover letters |
+
+## `/apply` — run Casey's 9-step process from the Project Instructions doc
+Follow that doc exactly. This file only adds the repo bookkeeping and the Google Docs mechanics.
+
+1. **Role analysis.** Fetch the full posting. Scaffold the repo record:
+   `python3 scripts/new_application.py --company "X" --role "Y" --track <track> --url "..."`
+   (pick the job-type track in `tracks/`; ask before creating a new one). Save the posting text
+   in `posting.md` and write the Role Requirements Profile into `analysis.md`.
+2. **Knowledge Base audit.** Coverage map (Strong / Partial / None) against the live Bullet Bank,
+   into `analysis.md`. Call out any [STILL OPEN] bullet that maps to a must-have.
+3. **Prioritization.** Rank roles and engagements; state the reasoning in `analysis.md`.
+4. **Bullet proposal.** Show Casey the proposed Baker Tilly bullets in priority order, with reasons.
+5. **Gap-check question.**
+6. **STOP.** Do not build any document until Casey confirms the bullets. Commit the repo record
+   with status `drafting` so the analysis is saved.
+7. **Build the resume as a Google Doc:**
+   - Download the template .docx and upload it with Drive `create_file`
+     (`contentMimeType` = the .docx MIME type, `parentId` = Position Resumes) so it converts to a
+     Google Doc. Name it `Casey-Hellenbrand-[Job Role]`.
+   - `read_doc`, then replace only the Baker Tilly bullets. The template's `Text` paragraphs are
+     placeholders: delete the placeholder text and insert the bullets separated by `\n`, which keeps
+     the bullet formatting. Replace or remove any pre-filled Baker Tilly bullet that wasn't chosen.
+     Edit from the highest index to the lowest, guarded by `requiredRevisionId`.
+   - Never touch UW Credit Union, Badger Consulting, Education, or Skills & Certifications.
+     The Summary changes only as the Bullet Bank's Summary Bank allows (fixed anchor, tailored
+     second sentence).
+   - Export to PDF and check it: one page, no leftover `Text` placeholders.
+8. **Cover letter (if requested)**, following the Playbook: run its intake questions, use the
+   four-paragraph base structure at 300–400 words, then do the accuracy pass. Create it as a Google
+   Doc in Cover Letters, named `Casey Hellenbrand - [Role] - Cover Letter`.
+9. **Review round** with Casey, editing the same Google Docs in place (same links).
+10. **Record and feed back.**
+    - Fill in the decision log in `analysis.md`.
+    - Put the Google Doc links in the headers of `resume.md` and `cover-letter.md`, and paste in
+      the final text as a snapshot.
+    - Update `tracker.csv`, run `python3 scripts/build_index.py`, commit and push.
+    - Propose additions to the Bullet Bank (new phrasing, confirmed numbers, the Shipped Versions
+      Log entry). **Edit the Bullet Bank only after Casey approves the changes.**
+      Its open items (number standardization, healthcare engagement, Badger decision) stay there.
+
+## After submission
+- Casey runs `/job-status <company> applied`.
+- If he edited the Google Docs before submitting, the docs are already the final versions. Refresh
+  the text snapshots in `resume.md` / `cover-letter.md` from them.
+- Optionally save the submitted PDF in `originals/`.
+
+## Repo layout
+- `applications/<YYYY-MM-DD>_<company>_<role>/`: `posting.md`, `analysis.md` (requirements
+  profile, coverage map, prioritization, decision log), `resume.md` and `cover-letter.md`
+  (Google Doc link plus final-text snapshot), `originals/` (submitted PDFs, optional)
+- `tracks/`: job types, used to group applications and to record what worked per type. These are
+  not a bullet source; bullets come only from the Bullet Bank.
+- `tracker.csv` and the README Applications table (`scripts/build_index.py`)
+- `scripts/new_application.py`, `scripts/update_status.py`, `scripts/build_index.py`
 
 ## Rules
-- **Everything is linked.** Every resume and cover letter links to its posting (live URL + saved copy), and every posting lists the materials sent for it. The README table links all of it. Never leave a resume or cover letter outside an application folder.
-- When Casey shares materials he already sent (PDFs/DOCX) for a past application, log them the same way: originals in `originals/`, markdown copies in `resume.md` / `cover-letter.md`, and a reconstructed decision log marked as reconstructed.
-- Never fabricate skills, titles, dates, numbers, or employers. If a posting wants something Casey doesn't have, say so in the analysis rather than stretching.
-- Keep resumes to one page of content unless the track file says otherwise.
-- When Casey corrects a draft, ask whether the correction should be saved to `profile/preferences.md` or the track file so it carries forward.
+- Everything in the Project Instructions "Tone and honesty" section and the Playbook rules applies.
+  Never fabricate or estimate a metric; flag it as [STILL OPEN].
+- Every resume and cover letter is linked to its posting, and every posting links its materials.
+- Never trash or overwrite Casey's Drive files without asking. Edits to an existing doc go in place.
 - Status values: `drafting`, `applied`, `interviewing`, `offer`, `rejected`, `withdrawn`, `skipped`.

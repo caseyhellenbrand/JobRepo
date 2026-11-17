@@ -11,7 +11,7 @@
 ## Keywords that matter here
 - Oracle Fusion / Oracle Cloud ERP, General Ledger, chart of accounts, implementation, configuration, requirements gathering, testing / UAT, data conversion
 
-## Bullets to favor / downplay
+## Emphasis for this job type
 - Favor: tags `erp-consulting`
 - Downplay: coursework unrelated to systems
 

@@ -12,8 +12,8 @@
 ## Keywords that matter here
 - target operating model, front/middle/back office, investment operations, fund accounting, data management, system selection and implementation, vendor assessment, automation, process improvement, governance
 
-## Bullets to favor / downplay
-- Favor: tag `asset-management`; keep all UW Credit Union bullets
+## Emphasis for this job type
+- Pull bullets from the Bullet Bank (Drive) by skill tag; see the Project Instructions
 - Summary should name "Wealth Management experience" explicitly
 - Downplay: deep Oracle module detail, sales dollar figures (keep one line), ticket-backlog framing
 

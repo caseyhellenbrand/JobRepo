@@ -1,6 +1,7 @@
 # Cover Letter: Product Manager — Morning Consult (as sent, 2026-10-11)
 
 > **Job posting:** [Morning Consult — Product Manager](https://jobs.ashbyhq.com/morningconsult/bafd9942-f815-4b8b-83fd-2719e3eb6a4a) · [Saved copy](posting.md) · [Analysis & decision log](analysis.md) · [Resume](resume.md)
+> **Google Doc:** [Casey Hellenbrand - Product Manager - Cover Letter](https://docs.google.com/document/d/1moxAmTiwUQGowxrPpV7qP9emsTxjo5EZ0aPU31iYGck/edit) (Drive → 2026 Applications / Morning Consult)
 > **File sent:** [originals/Casey_Hellenbrand_Product_Manager_Cover_Letter.pdf](originals/Casey_Hellenbrand_Product_Manager_Cover_Letter.pdf)
 
 

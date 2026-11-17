@@ -4,16 +4,17 @@ A Claude Code workflow for tailoring a resume and cover letter to each posting,
 organized by job type, with a record of why each resume turned out the way it did.
 
 ## Quick start
-1. Paste your full resume into `profile/master-resume.md`.
-2. In Claude Code, open this repo and run: `/apply <paste posting or URL>`
-3. Review the output in `applications/<date>_<company>_<role>/`.
-4. After you apply: `/job-status <company> applied`
+1. In Claude Code, open this repo and run `/apply <posting URL or text>`.
+2. Claude follows your 9-step process from the Project Instructions in Google Drive, and stops at step 6 for your sign-off.
+3. You get a Google Doc resume, built from your template, in Drive → Position Resumes (and a cover letter in Cover Letters, if you want one).
+4. After you apply, run `/job-status <company> applied`.
+
+**Source of truth:** your Google Drive "Claude - Job and Resume 2026" folder (Project Instructions, Bullet Bank, Cover Letter Playbook, resume template). This repo is the record of each application.
 
 ## Where things are
 | Path | What it is |
 |---|---|
-| `profile/` | Master resume, experience bank, your preferences |
-| `tracks/` | One file per job type, with what to emphasize for each |
+| `tracks/` | One file per job type: what to emphasize and what has worked |
 | `applications/` | One folder per application: posting, analysis + decision log, resume, cover letter, and `originals/` with the exact files sent |
 | `tracker.csv` | Index of every application and its status |
 | `CLAUDE.md` | The workflow Claude follows |

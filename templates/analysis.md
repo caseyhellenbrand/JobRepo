@@ -1,30 +1,45 @@
 # Analysis: {role} — {company}
 
 - **Track:** {track}
-- **Posting:** {url}
+- **Posting:** {url} · [saved copy](posting.md)
 - **Date:** {date}
 
+## 1. Role Requirements Profile
+| Requirement | Must-have / Preferred / Implied | Skill tag(s) | Notes |
+|---|---|---|---|
+| | | | |
+
+**Posting terminology to mirror:**
+**Tone / culture signals:**
+
+## 2. Coverage map (vs. live Bullet Bank)
+| Requirement | Match (Strong / Partial / None) | Bullet(s) | Notes |
+|---|---|---|---|
+| | | | |
+
+**[STILL OPEN] bullets mapped to must-haves:**
+**No coverage anywhere:**
+
+## 3. Prioritization
+<!-- Which role/engagement leads and why (which must-haves it covers) -->
+
+## 4. Bullet proposal (approved version)
+<!-- Final Baker Tilly bullets in order, each with the requirement it serves -->
+
+## 5. Gaps
+<!-- Gap-check answers from Casey; how each gap was handled -->
+
 ## Fit score: _/10
-<!-- One-line justification -->
-
-## Requirements match
-| Requirement | Match | Evidence (bullet from experience bank) |
-|---|---|---|
-| | matched / partial / missing | |
-
-## Keywords to mirror
--
-
-## Gaps
-<!-- What's missing and whether it's addressed (cover letter, reframing) or left out -->
 
 ## Decision log
-<!-- Why the resume turned out this way -->
-- **Track chosen:** … because …
-- **Moved up:** … because …
-- **Cut:** … because …
+- **Lead role/engagement:** … because …
+- **Included:** … because …
+- **Left out:** … because …
 - **Reworded:** "…" → "…" because …
+- **Summary second sentence:** … because …
 - **Gaps left unaddressed:** … because …
 
+## Feedback loop (step 9)
+<!-- What was proposed for the Bullet Bank, and whether Casey approved it -->
+
 ## Outcome notes
-<!-- Fill in later: response, interview feedback, what to reuse -->

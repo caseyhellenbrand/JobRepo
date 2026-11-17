@@ -9,8 +9,8 @@
 ## Keywords that matter here
 -
 
-## Bullets to favor / downplay
-<!-- Refer to tags in profile/experience-bank.md -->
+## Emphasis for this job type
+<!-- Which Bullet Bank skill tags usually matter (ERP-CONFIG, PM-GOV, STAKEHOLDER, ...) -->
 
 ## Summary line for this track
 <!-- A reusable starting point for the resume summary -->

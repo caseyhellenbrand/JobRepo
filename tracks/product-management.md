@@ -12,8 +12,8 @@
 ## Keywords that matter here
 - backlog, user stories, requirements, acceptance criteria, prioritization, roadmap, sprint planning / refinement, cross-functional, stakeholders, release notes, metrics, iterative delivery, Agile
 
-## Bullets to favor / downplay
-- Favor: tag `product-management`. Put backlog, requirements, and AI-workflow bullets in the top half.
+## Emphasis for this job type
+- Pull bullets from the Bullet Bank (Drive) by skill tag; see the Project Instructions
 - Downplay: proposal dollar values and sales language. Keep Oracle module specifics brief, since PM hiring managers won't know them.
 - Translate the vocabulary: "functional designs" → requirements/specs; "RAID log" → risk and blocker tracking.
 
