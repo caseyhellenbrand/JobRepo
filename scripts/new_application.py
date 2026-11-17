@@ -43,7 +43,7 @@ def main() -> None:
 
     values = {"role": a.role, "company": a.company, "track": a.track,
               "url": a.url, "date": today}
-    for name in ("posting.md", "analysis.md", "resume.md", "cover-letter.md"):
+    for name in ("posting.md", "analysis.md", "resume.md", "cover-letter.md", "interviews.md"):
         text = (ROOT / "templates" / name).read_text()
         (folder / name).write_text(text.format_map(values))
     (folder / "originals").mkdir()

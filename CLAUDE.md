@@ -23,8 +23,15 @@ If a file has moved or been renamed, search the Knowledge Base folder by title.
 |---|---|---|
 | Claude - Job and Resume 2026 | `1T87LI-jUTz7B1E12KdLLOGjMjqvH-8ES` | parent |
 | Knowledge Base | `18G5CLJnnU6BsPUvCVVRyu--gccfpHJLI` | the source docs above |
-| Position Resumes | `1dHldth7olwMZotzF_Ra4whF-yDPdxm6Z` | finished tailored resumes |
-| Cover Letters | `1-EoIQmWWyyp-Mkuvi6N6oK4esRC-niLr` | finished cover letters |
+| 2026 Applications | `1ejQxfpJFotUXdgqQLBXl7gDDY-KKUjUY` | **one folder per company; finished resume + cover letter go here** |
+| 2026 Applications / EY | `1GQyZVeFh4LSvpnYOvCUls2UVE3gV875V` | |
+| 2026 Applications / Morning Consult | `10pVXvzc3l4fLEbZ90bSfx583Cw9_m534` | |
+| 2026 Applications / Huron | `1arTWQzyw86qjJOOIdFByRyA1gNho5aVd` | |
+| Position Resumes / Cover Letters | `1dHldth7olwMZotzF_Ra4whF-yDPdxm6Z` / `1-EoIQmWWyyp-Mkuvi6N6oK4esRC-niLr` | archive of earlier finals only |
+
+New company → create its folder under 2026 Applications and add it to this table.
+The resume template in Drive is the only template. If Casey says a newer copy exists elsewhere
+(e.g. the old Claude Project files), ask him to upload it over the Drive one first.
 
 ## `/apply` — run Casey's 9-step process from the Project Instructions doc
 Follow that doc exactly. This file only adds the repo bookkeeping and the Google Docs mechanics.
@@ -42,7 +49,7 @@ Follow that doc exactly. This file only adds the repo bookkeeping and the Google
    with status `drafting` so the analysis is saved.
 7. **Build the resume as a Google Doc:**
    - Download the template .docx and upload it with Drive `create_file`
-     (`contentMimeType` = the .docx MIME type, `parentId` = Position Resumes) so it converts to a
+     (`contentMimeType` = the .docx MIME type, `parentId` = the company's folder under 2026 Applications) so it converts to a
      Google Doc. Name it `Casey-Hellenbrand-[Job Role]`.
    - `read_doc`, then replace only the Baker Tilly bullets. The template's `Text` paragraphs are
      placeholders: delete the placeholder text and insert the bullets separated by `\n`, which keeps
@@ -54,7 +61,7 @@ Follow that doc exactly. This file only adds the repo bookkeeping and the Google
    - Export to PDF and check it: one page, no leftover `Text` placeholders.
 8. **Cover letter (if requested)**, following the Playbook: run its intake questions, use the
    four-paragraph base structure at 300–400 words, then do the accuracy pass. Create it as a Google
-   Doc in Cover Letters, named `Casey Hellenbrand - [Role] - Cover Letter`.
+   Doc in the company's folder under 2026 Applications, named `Casey Hellenbrand - [Role] - Cover Letter`.
 9. **Review round** with Casey, editing the same Google Docs in place (same links).
 10. **Record and feed back.**
     - Fill in the decision log in `analysis.md`.
@@ -65,6 +72,25 @@ Follow that doc exactly. This file only adds the repo bookkeeping and the Google
       Log entry). **Edit the Bullet Bank only after Casey approves the changes.**
       Its open items (number standardization, healthcare engagement, Badger decision) stay there.
 
+## Where Claude stops and asks (never skipped)
+1. **Before analysis:** if the posting is behind a login or unclear, ask for the text.
+2. **New job type:** ask before creating a new track.
+3. **Must-have mapped to a [STILL OPEN] bullet or an unconfirmed number:** ask for the real value.
+4. **Gap check (step 5):** ask what is missing or could be reframed.
+5. **Sign-off (step 6):** nothing is built until Casey approves the bullets.
+6. **Cover letter intake:** the Playbook's intake questions, including "why this company" in his words.
+7. **Bullet Bank changes:** proposed, applied only after approval.
+Ask with the question tool (multiple choice + free text) where available, so questions are quick to answer on a phone.
+
+## Learning loop (how it adapts from posting to posting)
+- Every run reads the **live** Bullet Bank, Summary Bank, Shipped Versions Log and the track's
+  "Notes from past applications", so approved phrasing from earlier runs is reused.
+- Every run ends with a decision log and Bullet Bank proposals (step 10).
+- When an outcome arrives (`/job-status <company> interviewing|rejected|offer`), add one line to the
+  track's "Notes from past applications": what was sent, the framing used, and the result.
+- `/job-review` summarizes patterns across applications (which framing and bullets got responses, by job type)
+  and proposes changes to the tracks, Bullet Bank or Project Instructions.
+
 ## After submission
 - Casey runs `/job-status <company> applied`.
 - If he edited the Google Docs before submitting, the docs are already the final versions. Refresh
@@ -74,7 +100,8 @@ Follow that doc exactly. This file only adds the repo bookkeeping and the Google
 ## Repo layout
 - `applications/<YYYY-MM-DD>_<company>_<role>/`: `posting.md`, `analysis.md` (requirements
   profile, coverage map, prioritization, decision log), `resume.md` and `cover-letter.md`
-  (Google Doc link plus final-text snapshot), `originals/` (submitted PDFs, optional)
+  (Google Doc link plus final-text snapshot), `interviews.md` (dates, interviewers, questions,
+  feedback, follow-ups sent), `originals/` (submitted PDFs, optional)
 - `tracks/`: job types, used to group applications and to record what worked per type. These are
   not a bullet source; bullets come only from the Bullet Bank.
 - `tracker.csv` and the README Applications table (`scripts/build_index.py`)
