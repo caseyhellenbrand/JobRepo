@@ -1,17 +1,16 @@
-# Posting: FSO, Business Transformation — WAM Senior Consultant — EY
+# Posting: FSO, Business Transformation – WAM Asset Senior Consultant — EY
 
-> ⚠️ **Requisition mismatch, needs confirming.**
-> - Link given: https://careers.ey.com/job-invite/1721086/ → **Req 1721086**, "FSO, Business Transformation – WAM **Asset** Senior Consultant", posted Oct 23, 2026
-> - Cover letter (dated Sep 28, 2026) addresses **Req 1726266**, "Business Transformation Senior – WAM, **Wealth Management**"
->
-> Either you applied to 1726266 in September (and 1721086 is a related posting), or you reused this letter for 1721086. The summary below is for **1721086**, the link given.
-
+**Requisition:** 1721086 · **Live posting:** https://careers.ey.com/job-invite/1721086/ · **Posted:** Oct 23, 2026
 Captured: 2026-11-17 (summary)
 
 ## Materials sent for this posting
 - [Resume](resume.md) · file sent: [originals/Casey_Hellenbrand_Resume_2026_WAM.pdf](originals/Casey_Hellenbrand_Resume_2026_WAM.pdf)
 - [Cover letter](cover-letter.md) · file sent: [originals/Casey_Hellenbrand_Cover_Letter_EY_WAM.pdf](originals/Casey_Hellenbrand_Cover_Letter_EY_WAM.pdf)
 - [Analysis & decision log](analysis.md)
+
+## Materials sent for this posting
+> ⚠️ Not yet provided. Casey applied (confirmed 2026-11-17), but the resume and cover letter sent for this req haven't been added. Add them to `originals/`.
+- Related: the [Wealth Management application (Req 1726266)](../2026-09-28_ey_wam-wealth-senior/posting.md), same practice, applied Sep 28
 
 ## Summary
 - **Practice:** Financial Services Organization (FSO), Wealth & Asset Management Consulting

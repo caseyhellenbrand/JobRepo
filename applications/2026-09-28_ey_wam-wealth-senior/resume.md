@@ -1,6 +1,6 @@
-# Resume: WAM Senior Consultant — EY (as sent, 2026-09-28)
+# Resume: Business Transformation Senior, WAM Wealth Management — EY (as sent, 2026-09-28)
 
-> **Job posting:** [EY — WAM Senior Consultant](https://careers.ey.com/job-invite/1721086/) · [Saved copy](posting.md) · [Analysis & decision log](analysis.md) · [Cover letter](cover-letter.md)
+> **Job posting:** EY — Business Transformation Senior, WAM Wealth Management (Req 1726266; live link not saved) · [Saved copy](posting.md) · [Analysis & decision log](analysis.md) · [Cover letter](cover-letter.md)
 > **File sent:** [originals/Casey_Hellenbrand_Resume_2026_WAM.pdf](originals/Casey_Hellenbrand_Resume_2026_WAM.pdf)
 
 

@@ -1,8 +1,8 @@
-# Analysis: WAM Senior Consultant — EY (FSO Business Transformation)
+# Analysis: Business Transformation Senior, WAM Wealth Management — EY (Req 1726266)
 
 - **Track:** asset-management
-- **Posting:** Req 1721086 (link given). Cover letter addressed to Req 1726266. See posting.md.
-- **Date applied:** 2026-09-28 (cover letter date; confirm)
+- **Posting:** Req 1726266. The posting text wasn't captured, so the requirements below come from the sister Asset posting (Req 1721086), same practice and level. Treat the scores as approximate.
+- **Date applied:** 2026-09-28 (cover letter date; Casey confirmed he applied)
 - **Logged:** 2026-11-17, after the fact. The decision log was reconstructed from what was sent. Correct it where it's wrong.
 
 ## Fit score: 6/10
@@ -39,9 +39,8 @@ Strong on process improvement, system implementation, project management, and cl
 - **Cover letter:** "two sides" frame (inside wealth management + transformation consultant); personal motivation (financial literacy); CRM evaluation as system-selection evidence; closed on wanting to deepen wealth-management expertise in a dedicated FS practice.
 
 ## Issues spotted
-- **Requisition mismatch** (see posting.md). Confirm which role this letter went to.
-- If you apply to 1721086 (Asset, not Wealth), the letter should say "Asset & Wealth Management" or "asset management" rather than leaning only on wealth, and should address the investment-operations lifecycle the Asset posting emphasizes.
-- Dropping Power BI may have been a miss: the posting values data solutions, and the PM resume lists Power BI.
+- Dropping Power BI may have been a miss: the WAM practice values data solutions, and the PM resume lists Power BI.
+- Resume lists all roles as "Present". Update now that your last day (Nov 13) has passed.
 
 ## Outcome notes
 <!-- response? interview? -->

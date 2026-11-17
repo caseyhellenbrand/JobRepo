@@ -24,4 +24,5 @@
 Business and technology consultant with 3+ years advising ERP transformations, identifying process improvement, and implementing automation. Proven ability to manage complex workstreams and align cross-functional teams, complemented by prior Wealth Management experience in growth strategy, system evaluation, and advisor analytics.
 
 ## Notes from past applications
-- 2026-09-28 EY FSO WAM: WAM-tailored resume + cover letter built on the "two sides" story. Outcome pending.
+- 2026-09-28 EY WAM Wealth (Req 1726266): WAM-tailored resume + cover letter built on the "two sides" story. Outcome pending.
+- EY WAM Asset (Req 1721086): applied; materials not yet logged. Outcome pending.
