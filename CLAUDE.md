@@ -14,8 +14,9 @@ repo; the Drive versions may have changed.
 | Bullets, tags, lessons, shipped log | Baker Tilly Resume Bullet Bank — Master Reference | `1GjSLQmAVfv8uzOobVBdQVlEV6TKCfcbIWWxr2DmaM_0` |
 | Cover letter structure and rules | Cover Letter Playbook: Base Template and Process | `1Oj-tHmUJt0rvvy941r9UZY9MYEoxFgSoGcmlKLKOUDY` |
 | Resume template (.docx) | Template - Casey Hellenbrand - Resume - 2026.docx | `19YerE0difcOGITi-THIMy9OHQsx_L4pm` |
+| Review standard (17 checks, rounds, learning rules) | Resume Quality Rubric | `1JQOWt1ZUWNynvn7oW0HJmMCFbMWDNly6atWncsupi5U` |
 
-Read the three Google Docs with Drive `read_file_content` (`includeComments: true`).
+Read the four Google Docs with Drive `read_file_content` (`includeComments: true`).
 If a file has moved or been renamed, search the Knowledge Base folder by title.
 
 ## Drive folders
@@ -33,63 +34,84 @@ New company → create its folder under 2026 Applications and add it to this tab
 The resume template in Drive is the only template. If Casey says a newer copy exists elsewhere
 (e.g. the old Claude Project files), ask him to upload it over the Drive one first.
 
-## `/apply` — run Casey's 9-step process from the Project Instructions doc
-Follow that doc exactly. This file only adds the repo bookkeeping and the Google Docs mechanics.
+## `/apply` — seven phases
+Casey's Project Instructions (Drive) define the tailoring logic; the Resume Quality Rubric (Drive)
+defines the review standard and the learning rules. This section is the order of work plus the
+repo and Google Docs mechanics. Read all four Drive docs fresh at the start of every run.
 
-1. **Role analysis.** Fetch the full posting. Scaffold the repo record:
-   `python3 scripts/new_application.py --company "X" --role "Y" --track <track> --url "..."`
-   (pick the job-type track in `tracks/`; ask before creating a new one). Save the posting text
-   in `posting.md` and write the Role Requirements Profile into `analysis.md`.
-2. **Knowledge Base audit.** Coverage map (Strong / Partial / None) against the live Bullet Bank,
-   into `analysis.md`. Call out any [STILL OPEN] bullet that maps to a must-have.
-3. **Prioritization.** Rank roles and engagements; state the reasoning in `analysis.md`.
-4. **Bullet proposal.** Show Casey the proposed Baker Tilly bullets in priority order, with reasons.
-5. **Gap-check question.**
-6. **STOP.** Do not build any document until Casey confirms the bullets. Commit the repo record
-   with status `drafting` so the analysis is saved.
-7. **Build the resume as a Google Doc:**
-   - Download the template .docx and upload it with Drive `create_file`
-     (`contentMimeType` = the .docx MIME type, `parentId` = the company's folder under 2026 Applications) so it converts to a
-     Google Doc. Name it `Casey-Hellenbrand-[Job Role]`.
-   - `read_doc`, then replace only the Baker Tilly bullets. The template's `Text` paragraphs are
-     placeholders: delete the placeholder text and insert the bullets separated by `\n`, which keeps
-     the bullet formatting. Replace or remove any pre-filled Baker Tilly bullet that wasn't chosen.
-     Edit from the highest index to the lowest, guarded by `requiredRevisionId`.
-   - Never touch UW Credit Union, Badger Consulting, Education, or Skills & Certifications.
-     The Summary changes only as the Bullet Bank's Summary Bank allows (fixed anchor, tailored
-     second sentence).
-   - Export to PDF and check it: one page, no leftover `Text` placeholders.
-8. **Cover letter (if requested)**, following the Playbook: run its intake questions, use the
-   four-paragraph base structure at 300–400 words, then do the accuracy pass. Create it as a Google
-   Doc in the company's folder under 2026 Applications, named `Casey Hellenbrand - [Role] - Cover Letter`.
-9. **Review round** with Casey, editing the same Google Docs in place (same links).
-10. **Record and feed back.**
-    - Fill in the decision log in `analysis.md`.
-    - Put the Google Doc links in the headers of `resume.md` and `cover-letter.md`, and paste in
-      the final text as a snapshot.
-    - Update `tracker.csv`, run `python3 scripts/build_index.py`, commit and push.
-    - Propose additions to the Bullet Bank (new phrasing, confirmed numbers, the Shipped Versions
-      Log entry). **Edit the Bullet Bank only after Casey approves the changes.**
-      Its open items (number standardization, healthcare engagement, Badger decision) stay there.
+### A. Intake: ask everything up front, once
+Fetch the posting (if it's behind a login, ask for the text). Then ask, in ONE question batch:
+- Which job type (suggest one from `tracks/`; a new type needs Casey's OK)
+- Why this company and role, in his words, even rough
+- Anything to emphasize or avoid; any contact or referral there
+- Cover letter needed? Deadline?
+Scaffold: `python3 scripts/new_application.py --company "X" --role "Y" --track <track> --url "..."`.
+Save the full posting text in `posting.md` and the answers under "Intake" in `analysis.md`.
+
+### B. Analysis (Project Instructions steps 1-3)
+Role Requirements Profile → coverage map against the live Bullet Bank → prioritization, plus
+the job type's "Notes from past applications" and the Shipped Versions Log for similar roles.
+All into `analysis.md`, with a fit score.
+
+### C. Proposal and questions, then STOP
+Show Casey, in one message: fit score; the proposed Baker Tilly bullets in order, each with the
+requirement it serves; the proposed summary second sentence; terms mirrored and left out; then
+the questions: the gap check, any [STILL OPEN] item or unconfirmed number tied to a must-have, and
+anything missing. **Build nothing until he approves.** Commit the record as `drafting`.
+
+### D. Build, then Claude's review rounds (before Casey sees a draft)
+1. **Round 1, build:** convert the Drive template .docx into a Google Doc in the company's folder
+   under 2026 Applications, named `Casey-Hellenbrand-[Job Role]`. Replace only the Baker Tilly
+   bullets (the `Text` placeholders and pre-filled bullets) and the summary second sentence.
+   Delete-then-insert with `\n` between bullets keeps the formatting. Edit from the highest index
+   down, guarded by `requiredRevisionId`.
+2. **Round 2, rubric:** export the doc as PDF, score all 17 rubric checks Pass/Fix, revise every Fix
+   in the same doc. Repeat until all Pass, or only Fixes that need Casey remain.
+3. **Round 3, fresh eyes:** if the Agent tool is available, give a sub-agent ONLY the posting text,
+   the exported resume text and the rubric's section D; ask it to review as this role's hiring
+   manager. Otherwise reread it yourself as that skeptic. Revise.
+4. Save the scorecard per round in `analysis.md`. Export the doc as plain text to
+   `resume-claude-final.txt`; this is the baseline Casey's edits are compared against.
+Cover letter (if requested): same rounds, following the Playbook (intake, four paragraphs,
+300-400 words, accuracy pass), as a Google Doc in the same company folder.
+
+### E. Casey's review
+Send: the Google Doc link(s), the final scorecard, the three biggest tailoring choices, and any open
+questions. Casey edits the doc directly or tells Claude what to change; Claude edits the SAME doc
+(same link). Repeat until he says it's final.
+
+### F. Learn from his edits (when he says final, or runs `/resume-learn`)
+1. Export the final doc as plain text to `resume-final.txt`.
+2. `python3 scripts/resume_diff.py applications/<folder>` lists every change.
+3. Sort each change per the rubric: accuracy fix · phrasing preference · emphasis/selection ·
+   rubric gap · one-off. Show the list and ask which are standing rules (one question batch).
+4. Apply only what he approves: Bullet Bank (accuracy, preferred phrasing, Lessons, Shipped Versions
+   Log entry), the job type's notes in `tracks/`, the rubric (new/changed check), Project Instructions.
+5. Record the change count in `tracker.csv` → `casey_edits`, and rounds in `review_rounds`.
+
+### G. Track
+Decision log and "What Claude learned" in `analysis.md`; final text in `resume.md` with the Google
+Doc link; `python3 scripts/build_index.py`; commit and push. The application is now part of what the
+next run reads.
 
 ## Where Claude stops and asks (never skipped)
-1. **Before analysis:** if the posting is behind a login or unclear, ask for the text.
-2. **New job type:** ask before creating a new track.
-3. **Must-have mapped to a [STILL OPEN] bullet or an unconfirmed number:** ask for the real value.
-4. **Gap check (step 5):** ask what is missing or could be reframed.
-5. **Sign-off (step 6):** nothing is built until Casey approves the bullets.
-6. **Cover letter intake:** the Playbook's intake questions, including "why this company" in his words.
-7. **Bullet Bank changes:** proposed, applied only after approval.
-Ask with the question tool (multiple choice + free text) where available, so questions are quick to answer on a phone.
+1. Intake (phase A), in one batch.
+2. A new job type.
+3. A must-have that depends on a [STILL OPEN] bullet or an unconfirmed number.
+4. Sign-off on bullets and summary (phase C): nothing is built before it.
+5. Rubric Fixes that only Casey can resolve (phase D).
+6. Standing rule or one-off, for each non-trivial edit (phase F).
+7. Any change to a Drive doc: proposed first, applied only after approval.
+Ask with the question tool (multiple choice + free text) where available, so it's quick on a phone.
 
 ## Learning loop (how it adapts from posting to posting)
-- Every run reads the **live** Bullet Bank, Summary Bank, Shipped Versions Log and the track's
-  "Notes from past applications", so approved phrasing from earlier runs is reused.
-- Every run ends with a decision log and Bullet Bank proposals (step 10).
-- When an outcome arrives (`/job-status <company> interviewing|rejected|offer`), add one line to the
-  track's "Notes from past applications": what was sent, the framing used, and the result.
-- `/job-review` summarizes patterns across applications (which framing and bullets got responses, by job type)
-  and proposes changes to the tracks, Bullet Bank or Project Instructions.
+- Every run reads the live Bullet Bank, Summary Bank, Shipped Versions Log, rubric, and the job
+  type's notes, so approved wording and lessons from earlier runs are reused.
+- Every run ends with phase F: Casey's edits become Bullet Bank wording, job-type notes or rubric
+  checks, once he approves them.
+- `casey_edits` in the tracker is the scoreboard: if drafts are improving, it falls over time.
+- Outcomes (`/job-status ... interviewing|rejected|offer`) add a line to the job type's notes.
+- `/job-review` looks across applications for patterns and proposes changes.
 
 ## After submission
 - Casey runs `/job-status <company> applied`.
@@ -101,11 +123,14 @@ Ask with the question tool (multiple choice + free text) where available, so que
 - `applications/<YYYY-MM-DD>_<company>_<role>/`: `posting.md`, `analysis.md` (requirements
   profile, coverage map, prioritization, decision log), `resume.md` and `cover-letter.md`
   (Google Doc link plus final-text snapshot), `interviews.md` (dates, interviewers, questions,
-  feedback, follow-ups sent), `originals/` (submitted PDFs, optional)
+  feedback, follow-ups sent), `resume-claude-final.txt` + `resume-final.txt` (Claude's last draft and
+  Casey's final, for the edit comparison), `originals/` (submitted PDFs, optional)
 - `tracks/`: job types, used to group applications and to record what worked per type. These are
   not a bullet source; bullets come only from the Bullet Bank.
 - `tracker.csv` and the README Applications table (`scripts/build_index.py`)
-- `scripts/new_application.py`, `scripts/update_status.py`, `scripts/build_index.py`
+- `scripts/new_application.py`, `scripts/update_status.py`, `scripts/build_index.py`,
+  `scripts/resume_diff.py`
+- Commands: `/apply`, `/job-triage`, `/job-status`, `/resume-learn`, `/job-review`
 
 ## Rules
 - Everything in the Project Instructions "Tone and honesty" section and the Playbook rules applies.

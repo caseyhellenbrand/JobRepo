@@ -33,15 +33,15 @@ def main() -> None:
     with (ROOT / "tracker.csv").open(newline="") as f:
         rows = sorted(csv.DictReader(f), key=lambda r: r["date"], reverse=True)
 
-    lines = ["| Date | Company | Role | Track | Status | Fit | Posting | Materials |",
-             "|---|---|---|---|---|---|---|---|"]
+    lines = ["| Date | Company | Role | Track | Status | Fit | Your edits | Posting | Materials |",
+             "|---|---|---|---|---|---|---|---|---|"]
     for r in rows:
         folder = ROOT / r["folder"]
         posting = f"[Live posting]({r['url']})" if r["url"] else ""
         if (folder / "posting.md").exists():
             posting += f"{' · ' if posting else ''}[Saved copy]({r['folder']}/posting.md)"
         lines.append(f"| {r['date']} | {r['company']} | {r['role']} | {r['track']} | "
-                     f"{r['status']} | {r['fit_score']} | {posting} | {links_for(folder)} |")
+                     f"{r['status']} | {r['fit_score']} | {r.get('casey_edits', '')} | {posting} | {links_for(folder)} |")
     table = "\n".join(lines)
 
     text = README.read_text()

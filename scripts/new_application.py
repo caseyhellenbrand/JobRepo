@@ -16,7 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TRACKER = ROOT / "tracker.csv"
 FIELDS = ["date", "company", "role", "track", "status", "fit_score",
-          "url", "folder", "last_updated", "notes"]
+          "url", "folder", "last_updated", "review_rounds", "casey_edits", "notes"]
 
 
 def slug(text: str) -> str:
@@ -54,7 +54,7 @@ def main() -> None:
             "date": today, "company": a.company, "role": a.role, "track": a.track,
             "status": "drafting", "fit_score": "", "url": a.url,
             "folder": folder.relative_to(ROOT).as_posix(),
-            "last_updated": today, "notes": ""})
+            "last_updated": today, "review_rounds": "", "casey_edits": "", "notes": ""})
 
     subprocess.run([sys.executable, str(ROOT / "scripts" / "build_index.py")], check=True)
     print(folder)
