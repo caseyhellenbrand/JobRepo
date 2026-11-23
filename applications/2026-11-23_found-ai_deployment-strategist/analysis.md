@@ -69,48 +69,66 @@ No requirement needs a new skill tag; "industrial" is an industry gap, not a ski
 - **Supporting: Pillar Coordinator (Role 3).** Tool rollout and team adoption (P2, I3) and a method others run (I4).
 - **Left out:** PCard reconciliation and meeting artifacts (no mapped requirement, open metric), quarterly upgrade cycles (Oracle-internal), AI pursuit pilot and AI agent R&D (in progress; the shipped AI bullets already cover AI), 30+ practice initiatives (space).
 
-## 4. Bullet proposal (pending Casey's sign-off)
-See the proposal in phase C; recorded here once approved.
+## 4. Bullet proposal (approved by Casey 2026-11-23, after one revision)
+Casey's phase-C answers: staffed on **3 clients concurrently** (tribal nation + two county governments) alongside sales pursuits and longer-term offering initiatives; personally **scoped workplans/resourcing and shaped SOW terms** (did not select buyer mapping); RAID log phase coverage **not confirmed** ("8-phase" dropped); summary anchor left exactly as the template (grammar fix declined); Baker Tilly dates stay **Present**; note story = **Cash Positioning**, result in the Bullet Bank's own wording.
+
+Approved order (as built in round 1):
+1. Co-managed four-week failed-implementation assessment → readout + plan → two contracts (M1, M4, M5)
+2. Co-led 100+ client sessions, 4-10 person workshops to 50+ attendee executive presentations, design sign-off across 4 staffed modules (M3)
+3. Facilitated Business Process Reviews across AP, Cash Management, AR, Intercompany → client-accepted designs (M1). Dropped "faster close cycles" (unmeasured; not live)
+4. Ran the ERP portion of a county managed-services contract, 50+ tickets within a 90% SLA (M2)
+5. Maintained 200+ item RAID log, sprint-based implementation (M5, I1)
+6. Architected Cash Positioning and Forecasting, 100+ accounts, 3+ banks → single tool (P3; Casey's data-fragmentation "why")
+7. Developed AI configuration documentation workflow, 20+ hours → under 2 (P3)
+8. Led end-to-end proposal strategy, all pursuits on schedule (M2)
+9. Owned scope, workplans, resource models, and SOW terms across 25+ pursuits, $15M+ win value (M4)
+10. Trained 7 new team members (I3)
+11. Redesigned release review with GPT first pass, est. 25% (P2)
+12. Standardized Test Scripts and Security Workbook, adopted by 12+ consultants (I4)
 
 ## 5. Gaps
 - Industrial companies: no coverage. Not addressed on the resume; the note can say it's a new industry he wants to learn, as Casey said.
-- Engagements run at once and buyer mapping: questions to Casey.
+- Engagements run at once: resolved (3 concurrent). Buyer mapping: not claimed (Casey didn't confirm it).
+- Front-line operators / tool rollout to front-line teams: only UWCU CRM adoption (fixed section). Left to the interview.
 
 ## Fit score: 7/10
 Strong on the consulting core (workshops, executive readouts, messy-problem-to-result, contract wins) and AI hands-on work. Short of a perfect fit on industrial experience, an explicit "several customers at once" count, and the deal-side detail (terms, buyer map) at a product company.
 
 ## Review rounds (Resume Quality Rubric)
+Doc: [Casey-Hellenbrand-Deployment Strategist](https://docs.google.com/document/d/1rcNFDp88Fc25fOVUqkYBzXfgO4zEMNMhzb5SdyK2omw/edit) in Drive `2026 Applications / Found AI`.
+
 | # | Check | Round 2 | Round 3 | Final | Note |
 |---|---|---|---|---|---|
-| 1 | Top-third test | | | | |
-| 2 | Must-have coverage | | | | |
-| 3 | Posting language | | | | |
-| 4 | Lead choice | | | | |
-| 5 | XYZ outcome | | | | |
-| 6 | Confirmed numbers only | | | | |
-| 7 | Honest verbs | | | | |
-| 8 | No repeated verbs | | | | |
-| 9 | Scope matches outcome | | | | |
-| 10 | Tight | | | | |
-| 11 | One page | | | | |
-| 12 | Summary | | | | |
-| 13 | Untouched sections | | | | |
-| 14 | Consistency | | | | |
-| 15 | Six-second scan | | | | |
-| 16 | Skeptical hiring manager | | | | |
-| 17 | ATS | | | | |
+| 1 | Top-third test | Pass | Pass | Pass | Summary + first 3 bullets: messy problem → result, 3 concurrent engagements, workshops/exec sessions, contracts won |
+| 2 | Must-have coverage | Pass | Pass | Pass | All five must-haves on the page |
+| 3 | Posting language | Pass | Pass | Pass | Used: workshops, executive readout, measurable results, signed, scope, risks/blockers, schedule. Left out: industrial, MOU, buyer map, production order, baseline, cadence (no honest support) |
+| 4 | Lead choice | Pass | Pass | Pass | Engagement C assessment leads, per prioritization |
+| 5 | XYZ outcome | Pass | Pass | Pass | Cash Positioning outcome = single consolidated tool (Casey: "now they have a consolidated view") |
+| 6 | Confirmed numbers only | Pass | Pass | Pass | 3 concurrent confirmed 2026-11-23; all others match the Bank |
+| 7 | Honest verbs | Pass | Pass | Pass | Co-managed, Co-led; SOW terms confirmed by Casey |
+| 8 | No repeated verbs | Pass | Pass | Pass | |
+| 9 | Scope matches outcome | Pass | Pass | Pass | "Faster close" dropped from BPR bullet |
+| 10 | Tight | Fix | Pass | Pass | Two orphan-word lines trimmed ("Oracle ERP" in bullet 9; "per-module" in AI bullet, matches shipped EY wording) |
+| 11 | One page | Fix | Pass | Pass | Round 1 ran 2 lines onto page 2; summary tightened |
+| 12 | Summary | Pass | Pass | Pass | Anchor untouched |
+| 13 | Untouched sections | Pass | Pass | Pass | UWCU, Skills, Education identical to template |
+| 14 | Consistency | Pass | Pass | Pass | |
+| 15 | Six-second scan | Pass | Pass | Pass | Reviewer flagged Sales and Pillar lead bullets → reordered |
+| 16 | Skeptical hiring manager | Pass | Open | Open (Casey) | Probes: SOW terms / $15M+ "walk me through one deal"; "front-line teams" in summary |
+| 17 | ATS | Pass | Pass | Pass | Terms in body text; no tables/text boxes |
 
-**Six-second scan conclusion:**
-**Claim most likely to be probed (and Casey's defense):**
-**Fresh-eyes reviewer's main notes:**
+**Six-second scan conclusion:** "Consultant who runs client assessments, workshops and executive readouts, wins follow-on contracts, and owns deal scope and SOW terms; Oracle-heavy, not industrial."
+**Claim most likely to be probed (and Casey's defense):** "SOW terms across 25+ pursuits, contributing to $15M+." Casey should have one pursuit ready end to end: scope → resource model → SOW terms → signature. Second: "front-line teams" in the summary.
+**Fresh-eyes reviewer's main notes:** (1) put the commercial bullet first in Sales Pursuit: applied; (2) cut Cash Positioning: declined (Casey's chosen note story, data-fragmentation fit); (3) say the readout told executives where it stood: applied; (4) de-jargon RAID: applied ("risk and issue (RAID) log", "blockers"); (5) lead Pillar with the adopted method: applied; (6) BPRs "with client SMEs": held, needs Casey to confirm.
 
 ## Decision log
-- **Lead role/engagement:** … because …
-- **Included:** … because …
-- **Left out:** … because …
-- **Reworded:** "…" → "…" because …
-- **Summary second sentence:** … because …
-- **Gaps left unaddressed:** … because …
+- **Lead role/engagement:** Senior Consultant, Engagement C assessment, because one bullet covers messy problem, honest readout, and signature.
+- **Included:** 7 / 3 / 2 bullets, each mapped to a must-have or preferred item (section 4).
+- **Left out:** umbrella "Advised public-sector, healthcare…" (scope, not result; healthcare still unbroken-down); SFTP 30% (space; Cash Positioning chosen); PCard, meeting artifacts, quarterly upgrade cycles, AI pilots in progress, 30+ initiatives.
+- **Reworded:** commercial bullet → "Owned scope, workplans, resource models, and SOW terms across 25+ pursuits" (Casey confirmed); "Agile-influenced, sprint-based… RAID log" → "risk and issue (RAID) log on a sprint-based…" (posting is not Agile-specific; 8-phase unconfirmed); assessment → "executive readout on where it stood" (posting's honesty must-have).
+- **Summary second sentence:** "Proven ability to run 3 concurrent client engagements alongside sales pursuits, define messy problems with executives and front-line teams, and turn workshops and readouts into measurable results and signed follow-on work." Trimmed from the approved version ("and practice initiatives", "operational", "executive") to fit one page.
+- **Note:** posting asks for a short note, not a cover letter. [Note doc](https://docs.google.com/document/d/1ItoZAVu1XbjOgng58ZWRiMwLbk-WNXzz5Uc5t5gIu04/edit): why = Casey's own reasons; story = Cash Positioning, with one [CASEY] placeholder for the "before" state.
+- **Gaps left unaddressed:** industrial experience; buyer mapping; front-line tool rollout.
 
 ## What Claude learned (phase F)
 **Casey's edits: _ changes** (from `scripts/resume_diff.py`)

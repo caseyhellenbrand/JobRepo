@@ -28,6 +28,7 @@ If a file has moved or been renamed, search the Knowledge Base folder by title.
 | 2026 Applications / EY | `1GQyZVeFh4LSvpnYOvCUls2UVE3gV875V` | |
 | 2026 Applications / Morning Consult | `10pVXvzc3l4fLEbZ90bSfx583Cw9_m534` | |
 | 2026 Applications / Huron | `1arTWQzyw86qjJOOIdFByRyA1gNho5aVd` | |
+| 2026 Applications / Found AI | `1LUBIGncVoiyS1B_hAhVmSf6D-cVqWl6L` | |
 | Position Resumes / Cover Letters | `1dHldth7olwMZotzF_Ra4whF-yDPdxm6Z` / `1-EoIQmWWyyp-Mkuvi6N6oK4esRC-niLr` | archive of earlier finals only |
 
 New company → create its folder under 2026 Applications and add it to this table.

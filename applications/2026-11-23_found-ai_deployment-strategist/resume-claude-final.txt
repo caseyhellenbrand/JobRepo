@@ -1,0 +1,53 @@
+﻿Casey Hellenbrand
+608-535-2226 | casey.hellenbrand@icloud.com | Chicago, IL | LinkedIn
+
+
+SUMMARY
+Business and technology consultant with 3+ years advising ERP transformations, identifying process improvement, and implementing automation. Proven ability to run 3 concurrent client engagements alongside sales pursuits, define messy problems with executives and front-line teams, and turn workshops and readouts into measurable results and signed follow-on work.
+
+
+EXPERIENCE
+Baker Tilly Advisory Group, LP        Chicago, Illinois
+6th largest advisory CPA firm in the U.S., with 11,500+ professionals and $3+ billion in combined revenue
+Senior Consultant | Digital Advisory Services        Sep 2023 – Present
+* Co-managed a four-week assessment of a public-sector client's failed Oracle ERP implementation, delivering an executive readout on where it stood and an optimization plan that won two long-term optimization and managed-services contracts
+* Co-led 100+ client sessions, from 4-10 person requirements workshops to executive presentations of 50+ attendees, securing design sign-off across 4 staffed modules of a tribal-nation Oracle ERP implementation
+* Facilitated Business Process Reviews across AP, Cash Management, AR, and Intercompany, redefining current-state processes into future-state designs the client accepted
+* Ran the ERP portion of a county government managed-services contract as project manager and functional lead, resolving 50+ tickets within a 90% SLA by triaging issues and coordinating the client, PMO, and offshore resources
+* Maintained a 200+ item risk and issue (RAID) log on a sprint-based Oracle ERP implementation, surfacing risks and blockers to keep the program on schedule
+* Architected a Cash Positioning and Forecasting solution in Oracle Cash Management, consolidating reconciliation across 100+ bank accounts and 3+ banking partners into a single forward-looking treasury tool
+* Developed an AI-powered Oracle configuration documentation workflow, reducing processing time from 20+ hours to under 2
+
+
+Sales Pursuit Manager | Oracle Solutions Practice: Appointed Position                                     Nov 2023 – Present
+* Owned scope, workplans, resource models, and SOW terms across 25+ pursuits, contributing to $15M+ in win value
+* Led end-to-end strategy and execution for Oracle ERP proposals and presentations, aligning technical, marketing, legal, and subcontractor stakeholders to deliver all pursuits on schedule
+* Trained 7 newly onboarded team members to independently develop proposal content across sales review, workplans, and resource models
+
+
+ERP Pillar Coordinator | Oracle Solutions Practice: Appointed Position        Jun 2024 – Present
+* Standardized two core delivery artifacts, Test Scripts and the Security Workbook, adopted practice-wide by all 12+ consultants
+* Redesigned the team's Oracle release review process using a GPT-powered first-pass assessment ahead of solution architect validation, reducing review time by an estimated 25%
+
+
+UW Credit Union        Madison, Wisconsin
+Fastest-growing, 3rd-largest Wisconsin Credit Union with $6 billion in assets and 300,000+ members (2023)
+Wealth Management Intern        May 2022 – Aug 2023
+* Drove credit union-wide CRM adoption by leading platform evaluation and presenting findings and implementation recommendations to the executive team
+* Presented valuation recommendations to the Head of Wealth Management, backed by dual DCF and revenue-multiple models of advisor books of business, built for both internal succession and external acquisitions
+* Produced monthly appointment and referral analytics to inform advisor outreach strategy
+* Supported client relationship management through 500+ personalized communications across phone, email, and direct mail
+* Observed 30+ client-advisor meetings, gaining direct exposure to relationship management and portfolio strategy
+
+
+SKILLS & CERTIFICATIONS
+AI Certifications: Introduction to Claude Cowork, Anthropic (2026) | Claude Code 101, Anthropic (2026) | Claude Code in Action, Anthropic (2026)
+Oracle Cloud Certifications: Oracle Fusion Cloud Financials: Receivables & Collections 2026 Implementation Professional (2026) | Oracle Fusion AI Agent Studio Foundations Associate – Rel 1 (2025) | Oracle Cloud Success Navigator Essentials (2025)
+Core Skills: Microsoft Office Suite (Excel, PowerPoint, Word, Outlook) | Visio | SQL | AI Experience (Claude, ChatGPT, Copilot)
+
+
+EDUCATION
+University of Wisconsin-Madison        Madison, Wisconsin
+Bachelor of Business Administration
+* Majors: Finance, Investment, & Banking | Marketing
+* GPA 3.72/4.00
