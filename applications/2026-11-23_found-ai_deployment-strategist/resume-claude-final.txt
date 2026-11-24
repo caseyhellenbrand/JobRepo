@@ -10,6 +10,7 @@ EXPERIENCE
 Baker Tilly Advisory Group, LP        Chicago, Illinois
 6th largest advisory CPA firm in the U.S., with 11,500+ professionals and $3+ billion in combined revenue
 Senior Consultant | Digital Advisory Services        Sep 2023 – Present
+* Advised public-sector, healthcare, and tribal-nation clients on Oracle ERP transformations spanning assessment, implementation, optimization, and managed services engagements
 * Co-managed a four-week assessment of a public-sector client's failed Oracle ERP implementation, delivering an executive readout on where it stood and an optimization plan that won two long-term optimization and managed-services contracts
 * Co-led 100+ client sessions, from 4-10 person requirements workshops to executive presentations of 50+ attendees, securing design sign-off across 4 staffed modules of a tribal-nation Oracle ERP implementation
 * Facilitated Business Process Reviews across AP, Cash Management, AR, and Intercompany, redefining current-state processes into future-state designs the client accepted
@@ -20,12 +21,13 @@ Senior Consultant | Digital Advisory Services        Sep 2023 – Present
 
 
 Sales Pursuit Manager | Oracle Solutions Practice: Appointed Position                                     Nov 2023 – Present
-* Owned scope, workplans, resource models, and SOW terms across 25+ pursuits, contributing to $15M+ in win value
 * Led end-to-end strategy and execution for Oracle ERP proposals and presentations, aligning technical, marketing, legal, and subcontractor stakeholders to deliver all pursuits on schedule
+* Owned scope, workplans, resource models, and SOW terms across 25+ pursuits, contributing to $15M+ in win value
 * Trained 7 newly onboarded team members to independently develop proposal content across sales review, workplans, and resource models
 
 
 ERP Pillar Coordinator | Oracle Solutions Practice: Appointed Position        Jun 2024 – Present
+* Coordinated 30+ practice-development initiatives spanning standards, pre-sales assets, alliance certifications, skill development, and thought leadership for a 12+ member Oracle ERP practice
 * Standardized two core delivery artifacts, Test Scripts and the Security Workbook, adopted practice-wide by all 12+ consultants
 * Redesigned the team's Oracle release review process using a GPT-powered first-pass assessment ahead of solution architect validation, reducing review time by an estimated 25%
 
