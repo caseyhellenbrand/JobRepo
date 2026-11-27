@@ -12,7 +12,7 @@ Baker Tilly Advisory Group, LP        Chicago, Illinois
 Senior Consultant | Digital Advisory Services        Sep 2023 – Present
 * Advised public-sector, healthcare, and tribal-nation clients on Oracle ERP transformations spanning assessment, implementation, optimization, and managed services engagements
 * Co-managed a four-week assessment of a public-sector client's failed Oracle ERP implementation, delivering an executive readout on where it stood and an optimization plan that won two long-term optimization and managed-services contracts
-* Equipped 50+ healthcare end users to adopt Oracle Supply Chain Management modules, co-developing job aids for 50+ processes and training videos, and supporting UAT, training, and go-live
+* Enabled a healthcare client's Oracle Supply Chain Management go-live by training 50+ end users through end-user and train-the-trainer sessions and co-developing job aids for 50+ processes and 20+ training videos
 * Prepared 50+ tribal-nation end users for go-live across 4 staffed Oracle ERP modules through UAT sessions, end-user and train-the-trainer training, and job aids
 * Co-led 100+ client sessions, from 4-10 person requirements workshops to executive presentations of 50+ attendees, securing design sign-off across 4 staffed modules of a tribal-nation Oracle ERP implementation
 * Facilitated Business Process Reviews across AP, Cash Management, AR, and Intercompany, redefining current-state processes into future-state designs the client accepted
